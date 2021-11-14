@@ -9,14 +9,9 @@ namespace Sklep_internetowy_DD_DP.Controllers
 {
     public class UserController : Controller
     {
-        // GET: User
-        public IActionResult Index()
-        {
-            return View();
-        }
 
 
-        
+        [HttpPost]
         public ActionResult Create(User user)
         {
             if (ModelState.IsValid)
@@ -30,6 +25,11 @@ namespace Sklep_internetowy_DD_DP.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
 
     }
 }
