@@ -4,12 +4,13 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
 
-<h4>User</h4>
-<hr />
+
+<br/>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="border: 1px solid; border-radius: 15px; border-color: darkgrey; padding: 10px 20px; box-shadow: 5px 5px 10px #2E2163">
+        <h3>Załóż konto</h3>
+        <br />
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -32,15 +33,35 @@
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
+            <div>
+                <input type="checkbox" id="statute" name="statute">
+                <label for="statute">Akceptuję regulamin sklepu</label>
+            </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Załóż konto" class="btn btn-primary bg-purple" />
             </div>
         </form>
     </div>
+
+    <div style="display: flex;
+        align-items: unsafe center;
+        justify-content: center;
+    ">
+
+        <img src="" alt="" width="100" />
+        <img src="https://cdn-icons-png.flaticon.com/512/3534/3534124.png" alt="" width="100" />
+    </div>
+
+
+
 </div>
 
+
+<br />
 <div>
-    <a asp-action="Index">Back to List</a>
+    Masz już konto?
+    <a asp-action="Login">Zaloguj się</a>
 </div>
 
 @section Scripts {
