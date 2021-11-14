@@ -4399,11 +4399,11 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     }
 
 .navbar-light .navbar-brand {
-    color: #EDB847
+    color: rgba(0,0,0,.9)
 }
 
     .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-        color: #EDB847
+        color: rgba(0,0,0,.9)
     }
 
 .navbar-light .navbar-nav .nav-link {
@@ -6505,7 +6505,6 @@ a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warni
 a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:hover {
     background-color: #bd2130 !important
 }
-
 
 .bg-light {
     background-color: #f8f9fa !important
