@@ -33,11 +33,11 @@
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
-            <div>
-                <input type="checkbox" id="statute" name="statute">
-                <label for="statute">Akceptuję regulamin sklepu</label>
+            <div class="form-group">
+                <label asp-for="TermsOfUse" class="control-label"></label>
+                <input asp-for="TermsOfUse" class="form-control" />
+                <span asp-validation-for="TermsOfUse" class="text-danger"></span>
             </div>
-            <br />
             <div class="form-group">
                 <input type="submit" value="Załóż konto" class="btn btn-primary bg-purple" />
             </div>

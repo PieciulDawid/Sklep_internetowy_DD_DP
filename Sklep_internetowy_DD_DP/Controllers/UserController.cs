@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Sklep_internetowy_DD_DP.Models;
 
 namespace Sklep_internetowy_DD_DP.Controllers
@@ -14,13 +16,14 @@ namespace Sklep_internetowy_DD_DP.Controllers
         [HttpPost]
         public ActionResult Create(User user)
         {
+            Console.WriteLine();
             if (ModelState.IsValid)
             {
-                ViewBag.Message = user.Name + ", " + user.Surname + ", " + user.Email + ", " + user.Password;
+                //  TODO dodaj użytkownika
             }
             else
             {
-                ViewBag.Message = "Błędne dane!";
+                //  TODO nie dodawaj użytkownika
             }
             return View();
         }

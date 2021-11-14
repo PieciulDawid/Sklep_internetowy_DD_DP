@@ -23,6 +23,19 @@ namespace Sklep_internetowy_DD_DP.Models
         [Display(Name = "Hasło")]
         [Required(ErrorMessage = "Pole jest wymagane")]
         public string Password { get; set; }
+        [Display(Name = "Akceptuję regulamin sklepu")]
+        //  walidacja poprzez jQuery
+        [Compare("TermsOfUse",ErrorMessage = "Akceptacja regulaminu jest obowiązkowa")]
+        //  walidacja na serwerze
+        [IsTrue(ErrorMessage = "Akceptacja regulaminu jest obowiązkowa")]
+        public bool TermsOfUse { get; set; }
 
+        private class IsTrueAttribute : ValidationAttribute
+        {
+            public override bool IsValid(object value)
+            {
+                return value != null && value is bool && (bool) value;
+            }
+        }
     }
 }
