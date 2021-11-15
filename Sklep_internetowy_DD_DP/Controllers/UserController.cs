@@ -34,5 +34,26 @@ namespace Sklep_internetowy_DD_DP.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Login(User user)
+        {
+            Console.WriteLine();
+            if (ModelState.IsValid)
+            {
+                //  TODO dodaj użytkownika
+            }
+            else
+            {
+                //  TODO nie dodawaj użytkownika
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
     }
 }
