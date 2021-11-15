@@ -11,17 +11,17 @@ namespace Sklep_internetowy_DD_DP.Models
     public class User
     {
         [Display(Name = "Imię")]
-        [Required(ErrorMessage = "Pole jest wymagane")]
+        [Required(ErrorMessage = "Imię jest wymagane")]
         public string Name { get; set; }
 
         [Display(Name = "Nazwisko")]
-        [Required(ErrorMessage = "Pole jest wymagane")]
+        [Required(ErrorMessage = "Nazwisko jest wymagane")]
         public string Surname { get; set; }
         [Display(Name = "Adres e-mail")]
-        [Required(ErrorMessage = "Pole jest wymagane")]
+        [Required(ErrorMessage = "E-mail jest wymagany")]
         public string Email { get; set; }
         [Display(Name = "Hasło")]
-        [Required(ErrorMessage = "Pole jest wymagane")]
+        [Required(ErrorMessage = "Hasło jest wymagane")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
         [Display(Name = "Akceptuję regulamin sklepu")]
