@@ -24,7 +24,7 @@ namespace Sklep_internetowy_DD_DP.Models
         [Required(ErrorMessage = "Hasło jest wymagane")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        [Display(Name = "Akceptuję regulamin sklepu")]
+        [Display(Name = "Regulamin sklepu")]
         //  walidacja poprzez jQuery
         [Compare("TermsOfUse",ErrorMessage = "Akceptacja regulaminu jest obowiązkowa")]
         //  walidacja na serwerze
