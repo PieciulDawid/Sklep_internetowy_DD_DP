@@ -22,6 +22,7 @@ namespace Sklep_internetowy_DD_DP.Models
         public string Email { get; set; }
         [Display(Name = "Hasło")]
         [Required(ErrorMessage = "Pole jest wymagane")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
         [Display(Name = "Akceptuję regulamin sklepu")]
         //  walidacja poprzez jQuery
