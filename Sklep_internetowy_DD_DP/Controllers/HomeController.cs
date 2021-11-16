@@ -28,10 +28,18 @@ namespace Sklep_internetowy_DD_DP.Controllers
             return View();
         }
 
+        public IActionResult Regulamin()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
     }
 }

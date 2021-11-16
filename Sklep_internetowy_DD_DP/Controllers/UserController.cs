@@ -40,11 +40,11 @@ namespace Sklep_internetowy_DD_DP.Controllers
             Console.WriteLine();
             if (ModelState.IsValid)
             {
-                //  TODO dodaj użytkownika
+                //  TODO zaloguj użytkownika
             }
             else
             {
-                //  TODO nie dodawaj użytkownika
+                //  TODO nie zaloguj użytkownika
             }
             return View();
         }
